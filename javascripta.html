@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div>
+        <h3>System calculator</h3>
+    </div>
+
+    <div class="container">
+        <div class="calculater">
+            <form name="form1">
+                <div class="d1" id="d2">
+                    <input type="text" name="display" id="space" >
+                    <input type="button" class="color1" value="AC" onclick="display.value =''">
+                </div>
+            
+                <div class="d1">
+                    <input type="button" class="color2" value="9" onclick="form1.display.value +='9'">
+                    <input type="button" class="color2" value="8" onclick="display.value +='8' ">
+                    <input type="button" class="color2" value="7" onclick="display.value +='7' ">
+                    <input type="button" class="color3" value="+" onclick="display.value +='+' ">
+                </div>
+            
+                <div class="d1">
+                    <input type="button" class="color2" value="4" onclick="display.value +='4' ">
+                    <input type="button" class="color2" value="5" onclick="display.value +='5' ">
+                    <input type="button" class="color2" value="6" onclick="display.value +='6' ">
+                    <input type="button" class="color3" value="-" onclick="display.value +='-' ">
+                </div>
+            
+                <div class="d1">
+                    <input type="button" class="color2" value="1" onclick="display.value +='1' ">
+                    <input type="button" class="color2" value="2" onclick="display.value +='2' ">
+                    <input type="button" class="color2" value="3" onclick="display.value +='3' ">
+                    <input type="button" class="color3" value="%" onc6lick="display.value +='%' ">
+                </div>
+            
+                <div class="d1">
+                    <input type="button" value="." class="color2" onclick="display.value ='.' ">
+                    <input type="button" value="0" class="color2" onclick="display.value +='0' ">
+                    <input type="button" value="=" class="color2" onclick="form1.display.value =eval(form1.display.value)">
+                    <input type="button" value="*" class="color3" onclick="display.value +='*' ">
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
+    
+
+</body>
+</html>
